@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 # 添加依赖
 include_directories("D:/OpenGL/glfw-3.3.7.bin.WIN64/include")
 include_directories("D:/OpenGL/glad/include")
-include_directories("D:/vs_studio/learn/include")
+include_directories("D:/vs_studio/learnOpengl/include")
 
 link_directories("D:/OpenGL/glfw-3.3.7.bin.WIN64/lib-vc2019")
 

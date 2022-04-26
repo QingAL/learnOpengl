@@ -54,6 +54,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 
 	glDeleteShader(vertex);
 	glDeleteShader(fragment);
+	std::cout << "顶点着色器 & 片段着色器编译成功" << std::endl;
 };
 
 void Shader::use()
