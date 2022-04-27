@@ -42,8 +42,10 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 
 	glCompileShader(vertex);
 	checkCompileErrors(vertex, "VERTEX");
+	std::cout << "vertex shader compile success" << std::endl;
 	glCompileShader(fragment);
 	checkCompileErrors(fragment, "FRAGMENT");
+	std::cout << "fragment shader compile success" << std::endl;
 
 	//link shader
 	ID = glCreateProgram();
@@ -54,7 +56,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 
 	glDeleteShader(vertex);
 	glDeleteShader(fragment);
-	std::cout << "顶点着色器 & 片段着色器编译成功" << std::endl;
+	std::cout << "vertex & fragment link success" << std::endl;
 };
 
 void Shader::use()

@@ -41,7 +41,7 @@ int main()
     }
 
     // 使用创建的shader类编译顶点着色器和片段着色器
-    Shader ourShader("D:/vs_studio/learnOpengl/src/shader/shader.vs", "D:/vs_studio/learnOpengl/src/shader/shader.fs"); // you can name your shader files however you like
+    Shader ourShader("../../../src/shader/shader.vert", "../../../src/shader/shader.frag"); // you can name your shader files however you like
 
     // VAO
     float vertices[] = {
@@ -69,6 +69,7 @@ int main()
 
 
     // 渲染
+    std::cout << "in render loop" << std::endl;
     while (!glfwWindowShouldClose(window))
     {
         // glfw窗口输入

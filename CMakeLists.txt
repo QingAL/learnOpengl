@@ -11,9 +11,11 @@ include_directories("D:/vs_studio/learnOpengl/include")
 
 link_directories("D:/OpenGL/glfw-3.3.7.bin.WIN64/lib-vc2019")
 
+# load libs
+add_library(LIBS "src/lib/stb_image.cpp" "src/lib/Shader.cpp" "src/lib/glad.c")
+
 # 编译
-add_executable (learn "src/glad.c"  "src/shader/Shader.cpp" 
-					"src/introduction/helloShader2.cpp")
+add_executable (learn "src/introduction/helloTexture1.cpp")
 
 # 链接
-target_link_libraries(learn "glfw3.lib")
+target_link_libraries(learn "glfw3.lib" LIBS)
