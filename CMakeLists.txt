@@ -15,7 +15,7 @@ link_directories("D:/OpenGL/glfw-3.3.7.bin.WIN64/lib-vc2019")
 add_library(myLib "src/lib/stb_image.cpp" "src/lib/Shader.cpp" "src/lib/glad.c" )
 
 # 编译
-add_executable (learn "src/introduction/helloCoordinate2.cpp")
+add_executable (learn "src/introduction/helloCamera.cpp")
 
 # 链接
 target_link_libraries(learn "glfw3.lib" myLib)
